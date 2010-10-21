@@ -116,7 +116,13 @@ public class JsonObject {
 	 */
 	public void write(Writer writer) throws IOException {
 		writer.write('{');
+		boolean first = true;
 		for (Entry<String, Object> entry : values.entrySet()) {
+			if (first) {
+				first = false;
+			} else {
+				writer.write(',');
+			}
 			writer.write(JsonUtils.format(entry.getKey()));
 			writer.write(':');
 			writer.write(JsonUtils.format(entry.getValue()));
