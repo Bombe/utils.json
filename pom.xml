@@ -5,7 +5,7 @@
 	<groupId>net.pterodactylus</groupId>
 	<artifactId>utils.json</artifactId>
 	<name>utils.json</name>
-	<version>0.1-SNAPSHOT</version>
+	<version>0.1</version>
 	<packaging>jar</packaging>
 
 	<properties>
